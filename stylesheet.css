@@ -32,14 +32,18 @@ body{
     max-height: 500px;
     border-radius: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     padding: 30px;
     margin-bottom:5px;
     background-image: linear-gradient(
         to bottom,
         var(--clr-darkblue),
         var(--clr-vdarkblue));
-    
+}
+
+.star-icon{
+    background-color: var(--clr-darkblue);
+    border-radius: 50%;
 }
 
 .rating-state h1{
@@ -51,7 +55,39 @@ body{
 }
 
 .rate-scale{
-    padding:15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"]{
+    appearance: none;
+    background-color: var(--clr-darkblue);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+input[type="radio"]::before{
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+input[type="radio"]:checked::before{
+    transform: scale(1);
+}
+
+input[type="radio"]:hover{
+    box-shadow: inset 2em 2em var(--clr-orange);
+}
+
+input[type="radio"]:focus{
+    outline: 2px solid var(--clr-mediumgrey);
 }
 
 .submit-button{
@@ -61,6 +97,14 @@ body{
     width: 100%;
     border-radius: 30px;
     padding: 10px;
+}
+
+.submit-button:hover{
+    background-color: var(--clr-mediumgrey);
+}
+
+.submit-button:focus{
+    outline: 1px solid var(--clr-white);
 }
 
 .thank-you-state {
