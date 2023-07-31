@@ -25,6 +25,8 @@ body{
     background-color: var(--clr-vdarkblue);
 }
 
+/* Rating card*/
+
 .rating-state {
     display: flex;
     flex-direction: column;
@@ -106,6 +108,10 @@ input[type="radio"]:focus{
 .submit-button:focus{
     outline: 1px solid var(--clr-white);
 }
+/* how do I get the numbers IN the radio buttons? */
+
+
+/* Rating response card */
 
 .thank-you-state {
     display: flex;
@@ -142,12 +148,3 @@ input[type="radio"]:focus{
 .thank-you-state p{
     color: var(--clr-lightgrey);
 }
-/*
-:hover{
-
-}
-
-:focus{
-
-}
-*/
