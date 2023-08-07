@@ -15,7 +15,9 @@ const checkRatingValue = () => {
         (input) => {
             if(input.checked) {
                 rating_value = input.value
-            }}}}
+            }}}
+}
+
 
 
 submit_button.addEventListener('click', () =>
