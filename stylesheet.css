@@ -92,6 +92,17 @@ input[type="radio"]:focus{
     outline: 2px solid var(--clr-mediumgrey);
 }
 
+label{
+    position: absolute;
+    top: 12px;
+    left: 27px;
+    color: var(--clr-lightgrey);
+}
+
+.select-wrapper{
+    position: relative;
+}
+
 .submit-button{
     background-color: var(--clr-orange);
     color: var(--clr-white);
@@ -111,7 +122,7 @@ input[type="radio"]:focus{
 /* how do I get the numbers IN the radio buttons? */
 
 
-/* Rating response card */
+/* Thank you card */
 
 .thank-you-state {
     display: flex;
@@ -147,4 +158,10 @@ input[type="radio"]:focus{
 
 .thank-you-state p{
     color: var(--clr-lightgrey);
+}
+
+
+
+.hidden{
+    display: none;
 }
